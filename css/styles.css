@@ -1,0 +1,77 @@
+* {
+  box-sizing: border-box;
+}
+
+html {
+  height: 100%;
+}
+
+body {
+  display: flex;
+  flex-direction: column;
+  font-family: "Roboto" "Arial", sans-serif;
+  padding: 0;
+  margin: 0;
+  height: 100%;
+  font-size: 16px;
+  line-height: 1.5;
+  background-color:#fff;
+  color: #222;
+  transition: background-color 0.3 ease,
+      color 0.3 ease;
+}
+
+img {
+  max-width: 100px;
+  height: auto;
+}
+
+.visually-hidden {
+  position: absolute;
+  width: 1px;
+  height: 1px;
+  margin: -1px;
+  border: 0;
+  padding: 0;
+  clip: rect(0 0 0 0);
+  overflow-x: hidden;
+}
+
+
+*:focus {
+  outline: 2px dashed var(--outline-color);
+  outline-offset: 3px;
+}
+
+.container {
+  width: 100%;
+  max-width: 1180px;
+  padding-left: 20px;
+  padding-right: 20px;
+  margin-left: auto;
+  margin-right: auto;
+}
+
+.main-content {
+  flex-grow: 1;
+}
+
+
+.movie {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+}
+
+
+.button {
+  padding: 4px 12px;
+  border: 1px solid #000;
+  border-radius: 5px;
+}
+
+.button-liked {
+  border-color: transparent;
+  background-color: tomato;
+  color: #fff;
+}
